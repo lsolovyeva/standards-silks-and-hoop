@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARRIBA</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body onload="onLoadBody()">
+
+<!-- Banner -->
+	<section id="banner">
+		<h1>Нормативы по воздушной гимнастике в студии ARRIBA</h1>
+	</section>
+
+<!-- Alerts and infos -->
+	<br>
+	<div class="container" id="alertContainer1" style="width: 30em; display:none;">
+		 <div class="alert alert-warning">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close" onclick="closeWarningWindow('alertContainer1');">&times;</a>
+  			<strong>Ошибка:</strong> неправильный логин или пароль.
+		</div>
+	</div>
+
+	<div class="container" id="alertContainer2" style="width: 30em; display:none;">
+		 <div class="alert alert-warning">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close" onclick="closeWarningWindow('alertContainer2');">&times;</a>
+  			<strong>Ошибка доступа:</strong> сначала войдите в систему.
+		</div>
+	</div>
+
+	<div class="container" id="infoContainer" style="width: 30em; display:none;">
+		 <div class="alert alert-success">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close" onclick="closeWarningWindow('infoContainer');">&times;</a>
+  			Вход в систему выполнен успешно!
+		</div>
+	</div>
+	
+
+<!-- Login -->
+	<br>
+	<div class="container align-center" id="loginContainer" style="width: 20em">
+		<input type="text" placeholder="Логин" name="username" id="username" required>
+		<input type="password" placeholder="Пароль" name="password" id="password" required>
+		<button type="submit" id="submitBtn" onclick="validatelogin()">Войти</button>
+	</div>
+
+<!-- One -->
+	<section id="one" class="wrapper">
+		<div class="inner">
+			<div class="flex flex-3">	
+				<article>
+					<header>
+						<h3>⊱Воздушные полотна⊰</h3>
+					</header>
+					<div class="row">
+							<div class="3u 12u$(small)">
+								<ul class="actions vertical">
+									<li><a href="javascript:isbuttonenabled(btn1)" class="button special" id="btn1">Элементы начального уровня</a></li>
+									<li><a href="javascript:isbuttonenabled(btn2)" class="button special" id="btn2">Элементы среднего уровня</a></li>
+									<li><a href="javascript:isbuttonenabled(btn3)" class="button special" id="btn3">Элементы продвинутого уровня</a></li>
+								</ul>
+							</div>
+					</div>
+				</article>
+				<article>
+					<header>
+						<h3>⊱Воздушное кольцо⊰</h3>
+					</header>
+					<div class="row">
+							<div class="3u 12u$(small)">
+								<ul class="actions vertical">
+									<li><a href="javascript:isbuttonenabled(btn4)" class="button special" id="btn4">Элементы начального уровня</a></li>
+									<li><a href="javascript:isbuttonenabled(btn5)" class="button special" id="btn5">Элементы среднего уровня</a></li>
+									<li><a href="javascript:isbuttonenabled(btn6)" class="button special" id="btn6" >Элементы продвинутого уровня</a></li>
+								</ul>
+							</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="login.js"></script>
+    </body>
+</html>
